@@ -6,7 +6,7 @@
             "{",
             "public:",
             "    $0",
-            "}",
+            "};"
         ],
         "description": "Basic C++ Class"
     },
@@ -20,4 +20,30 @@
         ],
         "description": "Basic C++ Namespace"
     },
+    "Class Header": {
+        "prefix": "header",
+        "body": [
+            "#pragma once",
+            "",
+            "namespace ${1:namespace}",
+            "{",
+            "${2|class,struct|} ${3:name}",
+            "{",
+            "public:",
+            "    $0",
+            "};",
+            "}"
+        ],
+        "description": "C++ Header"
+    },
+    "Standard include": {
+        "prefix": "#include",
+        "body": "#include \"${header}.h\"",
+        "description": "C++ Include"
+    },
+    "System include": {
+        "prefix": "#include",
+        "body": "#include <${header}>",
+        "description": "C++ System Include"
+    }
 }
