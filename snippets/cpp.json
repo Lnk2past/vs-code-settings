@@ -1,0 +1,23 @@
+{
+    "Basic Class": {
+        "prefix": "class",
+        "body": [
+            "${1|class,struct|} ${name}",
+            "{",
+            "public:",
+            "    $0",
+            "}",
+        ],
+        "description": "Basic C++ Class"
+    },
+    "Namespace": {
+        "prefix": "namespace",
+        "body": [
+            "namespace ${name}",
+            "{",
+            "$0",
+            "}"
+        ],
+        "description": "Basic C++ Namespace"
+    },
+}

@@ -1,0 +1,11 @@
+{
+    "Basic Class": {
+        "prefix": "class",
+        "body": [
+            "class ${name}:",
+            "    def __init__(self):",
+            "        $0",
+        ],
+        "description": "Basic Python Class"
+    }
+}
